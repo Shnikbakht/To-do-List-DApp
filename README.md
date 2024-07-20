@@ -13,44 +13,45 @@ The TodoList DApp allows users to:
 Tasks are stored on the Ethereum blockchain, ensuring they are decentralized and tamper-proof.
 
 ## Repository Structure
-```sh 
+```sh
 └── To-do-List-DApp/
-├── README.md
-├── contracts
-│ └── ToDoList.sol
-├── hardhat.config.js
-├── ignition
-│ └── modules
-│ ├── Lock.js
-│ └── deploy.js
-├── my-todo-dapp
-│ ├── .gitignore
-│ ├── README.md
-│ ├── package-lock.json
-│ ├── package.json
-│ ├── public
-│ │ ├── favicon.ico
-│ │ ├── index.html
-│ │ ├── logo192.png
-│ │ ├── logo512.png
-│ │ ├── manifest.json
-│ │ └── robots.txt
-│ └── src
-│ ├── App.css
-│ ├── App.js
-│ ├── App.test.js
-│ ├── ToDoList.js
-│ ├── TodoList.json
-│ ├── index.css
-│ ├── index.js
-│ ├── logo.svg
-│ ├── reportWebVitals.js
-│ └── setupTests.js
-├── package-lock.json
-├── package.json
-└── test
-└── Lock.js
+    ├── README.md
+    ├── contracts
+    │   └── ToDoList.sol
+    ├── hardhat.config.js
+    ├── ignition
+    │   └── modules
+    │       ├── Lock.js
+    │       └── deploy.js
+    ├── my-todo-dapp
+    │   ├── .gitignore
+    │   ├── README.md
+    │   ├── package-lock.json
+    │   ├── package.json
+    │   ├── public
+    │   │   ├── favicon.ico
+    │   │   ├── index.html
+    │   │   ├── logo192.png
+    │   │   ├── logo512.png
+    │   │   ├── manifest.json
+    │   │   └── robots.txt
+    │   └── src
+    │       ├── App.css
+    │       ├── App.js
+    │       ├── App.test.js
+    │       ├── ToDoList.js
+    │       ├── TodoList.json
+    │       ├── index.css
+    │       ├── index.js
+    │       ├── logo.svg
+    │       ├── reportWebVitals.js
+    │       └── setupTests.js
+    ├── package-lock.json
+    ├── package.json
+    └── test
+        └── Lock.js
 ```
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
