@@ -13,6 +13,7 @@ The TodoList DApp allows users to:
 Tasks are stored on the Ethereum blockchain, ensuring they are decentralized and tamper-proof.
 
 ## Repository Structure
+
 ```sh
 └── To-do-List-DApp/
     ├── README.md
@@ -77,17 +78,11 @@ or
 
 yarn install
 
-## Configure environment variables
+## Configure environment variables & Deploy the Smart Contract
+
+Before running the React application, you need to deploy the smart contract.
 
 You will need two .env files:
-
-#### React App (.env file in the root of the React app):
-
-Create a .env file in the root directory of the React application and add the Ethereum contract address:
-
-```sh
-REACT_APP_CONTRACT_ADDRESS=0xYourContractAddressHere
-```
 
 #### Smart Dapp (.env file in the root of the smart contract project):
 
@@ -98,19 +93,25 @@ INFURA_PROJECT_ID=YourInfuraProjectIDHere
 PRIVATE_KEY=YourPrivateKeyHere
 ```
 
-## Deploy the Smart Contract
-
-Before running the React application, you need to deploy the smart contract. Run the following command to deploy your smart contract to the Sepolia network:
+Run the following command to deploy your smart contract to the Sepolia network:
 
 ```sh
 npx hardhat run ignition/modules/deploy.js --network sepolia
+```
+
+After deploy, you will get the Deployed contract address.
+
+Create another .env file in the root directory of the React application and add the contract address:
+
+```sh
+REACT_APP_CONTRACT_ADDRESS=0xYourContractAddressHere
 ```
 
 ## Start the development server
 
 npm start
 
-# or
+or
 
 yarn start
 
