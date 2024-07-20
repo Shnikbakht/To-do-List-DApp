@@ -12,6 +12,45 @@ The TodoList DApp allows users to:
 
 Tasks are stored on the Ethereum blockchain, ensuring they are decentralized and tamper-proof.
 
+## Repository Structure
+
+└── To-do-List-DApp/
+├── README.md
+├── contracts
+│ └── ToDoList.sol
+├── hardhat.config.js
+├── ignition
+│ └── modules
+│ ├── Lock.js
+│ └── deploy.js
+├── my-todo-dapp
+│ ├── .gitignore
+│ ├── README.md
+│ ├── package-lock.json
+│ ├── package.json
+│ ├── public
+│ │ ├── favicon.ico
+│ │ ├── index.html
+│ │ ├── logo192.png
+│ │ ├── logo512.png
+│ │ ├── manifest.json
+│ │ └── robots.txt
+│ └── src
+│ ├── App.css
+│ ├── App.js
+│ ├── App.test.js
+│ ├── ToDoList.js
+│ ├── TodoList.json
+│ ├── index.css
+│ ├── index.js
+│ ├── logo.svg
+│ ├── reportWebVitals.js
+│ └── setupTests.js
+├── package-lock.json
+├── package.json
+└── test
+└── Lock.js
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -23,7 +62,7 @@ Before you begin, ensure you have the following installed:
 
 ## Installation
 
-### Clone the repository:
+## Clone the repository:
 
 ```bash
 git clone https://github.com/Shnikbakht/To-do-List-DApp.git
@@ -33,15 +72,15 @@ git clone https://github.com/Shnikbakht/To-do-List-DApp.git
 
 npm install
 
-# or
+or
 
 yarn install
 
-### Configure environment variables
+## Configure environment variables
 
 You will need two .env files:
 
-# React App (.env file in the root of the React app):
+## React App (.env file in the root of the React app):
 
 Create a .env file in the root directory of the React application and add the Ethereum contract address:
 
