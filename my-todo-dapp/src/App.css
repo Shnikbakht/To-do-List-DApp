@@ -1,55 +1,111 @@
-/* App.css */
-body {
+.app-container {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  max-width: 600px;
+  margin: auto;
   padding: 20px;
 }
-.message {
-  font-size: 1.2em;
-  color: green; /* Adjust color as needed */
+
+.task-input {
+  width: 70%;
+  padding: 8px;
 }
 
-h1 {
-  color: #333;
-}
-
-input[type="text"] {
-  padding: 10px;
-  margin-right: 10px;
-  width: 300px;
-}
-
-button {
-  padding: 10px;
-  background-color: #007bff;
+.add-task-button {
+  padding: 8px 16px;
+  background-color: #5bc0de;
   color: white;
   border: none;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+.add-task-button:hover {
+  background-color: #31b0d5;
 }
 
-ul {
-  list-style-type: none;
+.task-list {
+  list-style: none;
   padding: 0;
 }
 
-li {
-  padding: 10px;
-  background-color: #fff;
-  margin-bottom: 10px;
+.task-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
-li.completed {
-  text-decoration: line-through;
-  color: #888;
+.task-item.completed {
+  background-color: #dff0d8;
+  color: #3c763d;
+  /* Remove text-decoration for completed tasks */
+  text-decoration: none;
 }
 
-li button {
-  margin-left: 10px;
+.task-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.pending-icon {
+  color: red;
+}
+
+.completed-icon {
+  color: green;
+}
+
+.task-button {
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.task-button.complete {
+  background-color: #5bc0de;
+  color: white;
+}
+
+.task-button.complete:hover {
+  background-color: #31b0d5;
+}
+
+.task-button.delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+.task-button.delete:hover {
+  background-color: #c9302c;
+}
+
+.task-button.completed-button {
+  background-color: #28a745; /* Green color for completed tasks */
+  color: white;
+}
+
+.task-button.completed-button:hover {
+  background-color: #218838;
+}
+
+.loading {
+  font-size: 16px;
+}
+
+.message {
+  font-size: 16px;
+}
+.fun-button {
+  background-color: orange; /* Orange background for the fun button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.fun-button:hover {
+  background-color: darkorange; /* Darker orange for hover effect */
 }
