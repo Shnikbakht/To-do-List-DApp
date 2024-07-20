@@ -81,7 +81,7 @@ yarn install
 
 You will need two .env files:
 
-## React App (.env file in the root of the React app):
+#### React App (.env file in the root of the React app):
 
 Create a .env file in the root directory of the React application and add the Ethereum contract address:
 
@@ -89,7 +89,7 @@ Create a .env file in the root directory of the React application and add the Et
 REACT_APP_CONTRACT_ADDRESS=0xYourContractAddressHere
 ```
 
-# Smart Dapp (.env file in the root of the smart contract project):
+#### Smart Dapp (.env file in the root of the smart contract project):
 
 Create a .env file in the root directory of your smart contract project with the following content:
 
